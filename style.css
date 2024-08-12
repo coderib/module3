@@ -1,0 +1,183 @@
+body{
+font-size: 16px;
+color:aliceblue;
+background-color: blue;
+}
+
+/*header*/
+#header-nav{
+background-color: rgb(244, 240, 235);
+border: 0%;
+border-radius: 0%;
+}
+
+.navbar-brand{
+    color: black;    
+}
+
+.container{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+ul.nav, a{
+    text-align: center;
+    text-decoration: none;
+    background-color:aliceblue;
+    font-size: large;
+}
+
+.navbar-toggler{
+    margin-right: 35px;
+    background-color: blue;
+    padding: 1px;
+}
+
+
+.container-md{
+    text-align: center;
+    text-align: justify;
+    background-color:blue;
+    margin-bottom: 10px;
+    height: 1000px;
+}
+
+.box1, .box2, .box3{
+    color: blue;
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+
+}
+.box1{
+    background-color: aliceblue;
+    float: left;
+}
+.box1>p>a {
+    background-color:aliceblue;
+    color: brown;
+}
+
+.box2{
+    background-color:beige;
+    float: left;
+    clear: right;
+}
+.box2>p>a {
+    background-color:beige;
+    color:brown;
+}
+.box3{
+    background-color: rgb(249, 248, 246);
+    float: left;
+    clear: right;
+}
+.box3>p>a {
+    background-color:rgb(249, 248, 246);
+    color:brown;
+}
+
+
+h3{
+    text-align: center;
+}
+
+p>a, {
+    background-color: none;
+    color: brown;
+}
+
+
+/*large screens only*/
+@media (min-width: 1200px) {
+    /*header*/
+        #nav-list{
+        display: none;
+        }
+        /*body*/    
+    .container{
+        margin-left: 40px;
+        }
+    .box1,.box2,.box3{
+		width: 105%; 
+		height: 1000px;
+	    }
+}
+
+
+ /*tablet*/
+@media (min-width: 992px) and (max-width: 1199px) {
+   /*header*/
+   #nav-list{
+    display: none;    
+}
+.container{
+    margin-left: 30px;
+     }
+
+.box1,.box2{
+    width: 435px; 
+    height: 1200px;
+}
+#box3{
+    width: 1000px; 
+    height: 900px;
+}
+
+}
+
+
+/*small*/
+@media (min-width: 719px) and (max-width: 991px) {
+   /*header*/
+   #nav-list{
+    display:none;
+}
+.container{
+    margin-left: 40px;
+     }
+.container-md{
+    margin-left: 5px;
+}
+     .box1,.box2{
+        width: 272px; 
+        height: 1200px;
+    }
+    
+    .box3{
+        width: 620px; 
+        height: 1200px;
+        position:relative;
+    }
+}
+
+/*fdx*/
+@media (min-width: 576px) and (max-width:718px) {
+
+    #nav-list{
+        display:none;
+    }
+    .container{
+        margin-left: 40px;
+         }
+    .container-md{
+        margin-left: 5px;
+    }
+         .box1,.box2{
+            width: 240px; 
+            height: 1500px;
+        }
+        
+        .box3{
+            width: 515px; 
+            height: 1200px;
+        }
+    }
+
+/*extra small screen*/
+@media (max-width: 575px) {
+   #box1,#box2,#box3{
+    width: 30%; 
+    height: 1200px;
+}
